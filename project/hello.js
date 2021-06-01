@@ -44,7 +44,6 @@ browserOpenPromise.then(function (browser) {
         // tab.$() // document.querySelector;
         return tab.$$("signInSubmitm"); // it will run document.querySelectorAll in the browser and gives you array of all the elements
       })
-
 function waitAndClick(selector) {
     return new Promise(function (scb, fcb) {
         let waitPromise = tab.waitForSelector(selector, { visible: true });
